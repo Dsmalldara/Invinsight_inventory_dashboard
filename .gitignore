@@ -1,0 +1,7 @@
+inventory_dashboard/node_modules/
+server/node_modules/
+inventory_dashboard/dist/
+server/dist
+inventory_dashboard/.env/
+server/.env/
+inventory_dashboard/.next/
