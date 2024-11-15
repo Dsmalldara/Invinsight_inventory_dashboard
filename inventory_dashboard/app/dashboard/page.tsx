@@ -43,6 +43,9 @@ if (!data) {
     }
   })
   console.log(RatingInfo)
+
+
+
   return (
     <div>
       <Insights/>

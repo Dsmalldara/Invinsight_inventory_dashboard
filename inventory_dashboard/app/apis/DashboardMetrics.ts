@@ -24,7 +24,6 @@ const {data, isLoading, error} = useQuery({
     refetchOnMount: false, 
     refetchOnReconnect: false
 })
-    console.log(apiClient)
     return {
         data, error
     }
