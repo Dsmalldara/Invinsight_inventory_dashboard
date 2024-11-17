@@ -15,12 +15,23 @@ const app = express()
 app.use(express.json())
 app.use(helmet.crossOriginResourcePolicy({policy:"cross-origin"}))
 app.use(morgan("common"))
+const allowedOrigins = [
+    process.env.FRONTEND_URL_LOCAL,
+    process.env.FRONTEND_URL_PROD
+];
+
 app.use(cors({
-    origin: process.env.FrontendPort || "http://localhost:3000",
+    origin: function(origin, callback) {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
-}))
+}));
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:false}))
 

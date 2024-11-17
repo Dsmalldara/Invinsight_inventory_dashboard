@@ -25,7 +25,7 @@ export const getProducts = (limit:number,page:number)=>{
     const CACHE_TIME = 5*60*1000
     const STALE_TIME = 1*60*1000 
  const {data,isLoading,error} = useQuery({
-    queryKey:[queryKeys.Products, page],
+    queryKey:[...queryKeys.Products, page],
 
     queryFn:()=> apiClient.get(`/products?limit=${limit}&page=${page}`),
         enabled:true,
