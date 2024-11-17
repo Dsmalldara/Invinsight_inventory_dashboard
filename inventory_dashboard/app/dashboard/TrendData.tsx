@@ -47,7 +47,7 @@ const TrendData: React.FC<TrendDataProps> = ({ trendInfo }) => {
   }
 
   return (
-    <Card className="w-full md:mt-6 ">
+    <Card className="w-full md:mt-6 mt-2 ">
       <CardHeader>
         <div className="flex items-center justify-between">
           <div>

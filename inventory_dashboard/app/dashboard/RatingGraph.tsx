@@ -43,7 +43,7 @@ const RatingData = ({ data }: RatingDataProps) => {
   ).toFixed(1)
 
   return (
-    <Card className="w-full mt-6">
+    <Card className="w-full mt-6 md:ml-0 ml-[-1rem] mx-auto  ">
       <CardHeader>
         <div className="flex items-center justify-between">
           <div>

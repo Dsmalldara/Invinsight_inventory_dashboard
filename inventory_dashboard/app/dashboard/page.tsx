@@ -49,9 +49,11 @@ if (!data) {
   return (
     <div>
       <Insights/>
-      <div className='flex flex-col space-x-6 space-y-6 md:flex-row items-center  justify-center'>
+      <div className='flex flex-col space-x-6 md:space-y-6 md:flex-row items-center  justify-center'>
       <TrendData trendInfo={trendInfo}/>
-      <RatingData data={RatingInfo}/>
+    <div className="md:ml-0 ">
+    <RatingData data={RatingInfo} />
+      </div>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl:overflow-auto gap-10 custom-grid-rows'>
           <CardPopularProducs data={popularProducts}/>
