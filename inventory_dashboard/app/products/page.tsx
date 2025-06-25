@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Skeleton } from "@/components/ui/skeleton";
-import { getAllProducts, Product } from '../apis/ProductsApi';
+import { getAllProducts, Product } from '../api/ProductsApi';
 import { PaginationComp } from '../pagination/pagination';
 import { current } from 'tailwindcss/colors';
 import CreateProduct from './CreateProduct';

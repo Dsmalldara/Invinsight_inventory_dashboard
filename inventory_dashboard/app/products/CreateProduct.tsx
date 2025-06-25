@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { useAppSelector } from '../store/reduxStore';
-import { useCreateProduct } from '../apis/ProductsApi';
+import { useCreateProduct } from '../api/ProductsApi';
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';

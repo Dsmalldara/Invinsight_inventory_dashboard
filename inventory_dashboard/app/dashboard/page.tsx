@@ -1,11 +1,10 @@
 'use client'
 import React from 'react'
-import { useDashboardMetrics } from '../apis/DashboardMetrics'
+import { useDashboardMetrics } from '../api/DashboardMetrics'
 import Insights from './Insights'
 import TrendData from "./TrendData"
 import RatingData from './RatingGraph'
 import CardPopularProducs from './CardPopularProducs'
-import CardSalesSummary from './CardPurchaseSummary'
 import PurchaseSummaryChart from './CardPurchaseSummary'
 import SalesSummaryChart from './CardSalesSummary'
 import StatCard from './StatCard'

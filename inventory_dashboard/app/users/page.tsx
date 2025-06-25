@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import { getUsers } from '../apis/UserApi'
+import { getUsers } from '../api/UserApi'
 import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from "@/components/ui/table"
 import { PaginationComp } from '../pagination/pagination'
 interface userType  {

@@ -17,7 +17,7 @@ import {
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { deleteProduct, getProducts } from '../apis/ProductsApi'
+import { deleteProduct, getProducts } from '../api/ProductsApi'
 import { ProductType } from '../dashboard/types'
 import { setIsSidebarcollapsed } from '../state'
 import DeleteProductButton from './DeletePop'

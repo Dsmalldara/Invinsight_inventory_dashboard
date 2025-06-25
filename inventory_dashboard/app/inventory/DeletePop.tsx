@@ -13,7 +13,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { toast, Toaster } from 'sonner';
-import { deleteProduct } from '../apis/ProductsApi';
+import { deleteProduct } from '../api/ProductsApi';
 
 interface DeleteProductButtonProps {
   productId: string;
