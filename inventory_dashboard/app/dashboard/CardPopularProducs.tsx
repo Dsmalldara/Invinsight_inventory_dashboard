@@ -1,5 +1,5 @@
 import React from 'react'
-import { useDashboardMetrics } from '../apis/DashboardMetrics'
+import { useDashboardMetrics } from '../api/DashboardMetrics'
 import { ProductType } from './types'
 import { Button } from '@/components/ui/button'
 import { ShoppingBag } from 'lucide-react'

@@ -2,18 +2,9 @@
 import React, { useMemo, useState } from "react";
 import { getExpenses } from "../api/expensesApi";
 import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+
 import { classNames, cn } from "@/lib/utils";
-import { Pie, ResponsiveContainer } from "recharts";
-import { PieChart } from "lucide-react";
+
 import { ExpensesPieChart } from "./ExpensesPieChart";
 import Loader from "@/lib/Loader";
 
