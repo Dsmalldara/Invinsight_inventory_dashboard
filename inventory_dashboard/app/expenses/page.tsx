@@ -1,6 +1,6 @@
 "use client";
 import React, { useMemo, useState } from "react";
-import { getExpenses } from "../apis/expensesApi";
+import { getExpenses } from "../api/expensesApi";
 import { Label } from "@/components/ui/label";
 import {
   Select,
