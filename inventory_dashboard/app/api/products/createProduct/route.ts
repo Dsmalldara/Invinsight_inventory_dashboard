@@ -1,4 +1,5 @@
 // app/api/products/createProduct/route.ts
+export const dynamic = 'force-dynamic'; 
 import { NextRequest } from 'next/server';
 
 export async function POST(request: NextRequest) {
