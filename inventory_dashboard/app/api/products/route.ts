@@ -1,5 +1,6 @@
 
 export const dynamic = 'force-dynamic'; 
+export const runtime = 'nodejs';
 import { NextRequest } from 'next/server';
 
 export async function GET(request: NextRequest) {
